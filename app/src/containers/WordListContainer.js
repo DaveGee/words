@@ -9,7 +9,18 @@ class WordListContainer extends Component {
   }
 
   componentWillMount() {
-    get('/parse/classes/Word', { where: JSON.stringify({ lesson: '1' }) })
+    this._getWords(this.props.lesson)
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.lesson !== this.props.lesson)
+      this._getWords(nextProps.lesson)
+  }
+
+  _getWords (lesson) {
+    const filter = { lesson }
+
+    get('/parse/classes/Word', { where: filter })
       .then(res => this.setState({ words: res.results }))
   }
   

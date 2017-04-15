@@ -9,8 +9,12 @@
     "email": "david.geretti@gmail.com",
     "url": ""
   },
-  "scripts": {},
+  "scripts": {
+    "start": "node server/index.js",
+    "postinstall": "cd server && npm install"
+  },
   "devDependencies": {
+    "babel-eslint": "^7.2.2",
     "eslint": "^3.18.0",
     "eslint-loader": "^1.7.0",
     "eslint-plugin-inferno": "^6.10.4",

@@ -1,0 +1,14 @@
+
+.WordList {
+
+}
+
+.Word {
+  display: flex;  
+}
+
+.Word__Lang1,
+.Word__Lang2 {
+  flex: 1;
+  padding: 20px;
+}
