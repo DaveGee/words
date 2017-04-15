@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "name": "words",
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": "davegee/words",
+  "author": {
+    "name": "David Geretti",
+    "email": "david.geretti@gmail.com",
+    "url": ""
+  },
+  "scripts": {},
+  "devDependencies": {
+    "eslint": "^3.18.0",
+    "eslint-loader": "^1.7.0",
+    "eslint-plugin-inferno": "^6.10.4",
+    "eslint-plugin-react": "^6.10.3"
+  }
+}
