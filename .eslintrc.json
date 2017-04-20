@@ -5,7 +5,7 @@
     "node": true,
     "jasmine": true
   },
-  "extends": ["eslint:recommended", "plugin:inferno/recommended"],
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
   "parserOptions": {
     "ecmaFeatures": {
       "experimentalObjectRestSpread": true,
@@ -14,14 +14,12 @@
     "sourceType": "module"
   },
   "plugins": [
-    "react",
-    "inferno"
+    "react"
   ],
   "parser": "babel-eslint",
   "rules": {
-    "inferno/jsx-uses-inferno": "error",
-    "inferno/jsx-uses-vars": "error",
     "react/jsx-uses-vars": 1,
+    "react/jsx-uses-react": 1,
     "no-unused-vars": ["error", { "args": "none" }],
     "no-console": ["warn"],
     "indent": [

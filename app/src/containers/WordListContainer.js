@@ -1,9 +1,14 @@
-import Component from 'inferno-component'
+import React, { Component } from 'react'
 import WordList from '../components/WordList'
 import { get } from '../services/api'
+import Types from 'prop-types'
 
 class WordListContainer extends Component {
   
+  static propTypes = {
+    lesson: Types.array
+  }
+
   state = {
     words: []
   }

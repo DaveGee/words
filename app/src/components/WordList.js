@@ -1,7 +1,12 @@
 import './WordList.css'
-import Component from 'inferno-component'
+import React, { Component } from 'react'
+import Types from 'prop-types'
 
 class WordList extends Component {
+
+  static propTypes = {
+    words: Types.array
+  }
 
   render() {
     return (
