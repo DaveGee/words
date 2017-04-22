@@ -6,6 +6,8 @@ var ParseServer = require('parse-server').ParseServer
 var path = require('path')
 require('dotenv').config()
 
+process.title = 'Words API server <3'
+
 var databaseUri = process.env.DATABASE_URI || process.env.MONGODB_URI
 
 if (!databaseUri) {
