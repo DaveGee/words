@@ -25,7 +25,7 @@ const appendQuery = (path, query) => {
 }
 
 const apiCall = (method, url, { query, headers } = {}) => {
-  if (!/^http/.test(url)) {
+  if (!/^http/.test(url) && config.PARSE_URL) {
     url = config.PARSE_URL + url
   }
 
