@@ -9,12 +9,14 @@
   },
   "devDependencies": {
     "csvtojson": "^1.1.6",
+    "firebase-tools": "^3.9.0",
     "react-scripts": "0.9.5"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "react-scripts build && firebase deploy"
   }
 }
