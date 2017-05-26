@@ -1,38 +1,42 @@
 import React, { Component } from 'react'
 import WordList from '../components/WordList'
-import { get } from '../services/api'
 import Types from 'prop-types'
+import words from '../../data/polski.json'
+
+const csvMapper = ([
+  lesson,
+  lang1,
+  lang2
+]) => ({
+  lesson,
+  lang1,
+  lang2
+})
 
 class WordListContainer extends Component {
-  
+
   static propTypes = {
     lesson: Types.array
+  }
+
+  static defaultProps = {
+    lesson: [],
   }
 
   state = {
     words: []
   }
 
-  componentWillMount() {
-    this._getWords(this.props.lesson)
-  }
-
-  componentWillReceiveProps(nextProps) {
-    if (nextProps.lesson !== this.props.lesson)
-      this._getWords(nextProps.lesson)
-  }
-
   _getWords (lesson) {
-    const filter = { lesson }
-
-    get('/parse/classes/Word', { where: filter })
-      .then(res => this.setState({ words: res.results }))
+    return words
+      .filter(w => !lesson.length || lesson.includes(w[0]))
+      .map(csvMapper)
   }
-  
+
   render() {
     return (
-      <WordList 
-        words={this.state.words}
+      <WordList
+        words={this._getWords(this.props.lesson)}
       />)
   }
 }

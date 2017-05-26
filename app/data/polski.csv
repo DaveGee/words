@@ -1,0 +1,215 @@
+Lesson,Lang1,Lang2
+3,słownik,dictionnaire
+3,niestety,malheureusement
+3,jeszcze,encore
+3,teraz,maintenant
+3,książka,livre
+3,zeszyt,cahier
+3,długopis,stylo
+3,tablica,tableau
+3,krzesło,chaise
+3,stół,tableau
+3,ołówek,crayon
+3,gumka,gomme
+3,okno,fenetre
+3,klucz,clef
+3,kubek,tasse
+3,komórka,natel
+3,torba,sac a main
+3,mapa,carte
+3,segregator,classeur
+3,rzeczownik,nom (mot)
+3,męski,masculin
+3,żeński,feminin
+3,nijaki,neutre
+3,atracyjny,attractif
+3,kreatywny,creatif
+3,sympatyczny,sympathique
+3,ambitny,ambitieux
+3,skomplikowany,complique
+3,inteligentny,intelligent
+3,romantyczny,romantique
+3,zestresowany,stresse
+3,niebiesky,bleu
+3,czerwony,rouge
+3,zielony,vert
+3,fioletowy,violet
+3,czarny,noir
+3,brązowy,brun
+3,żółty,jaune
+3,różowy,rose
+3,szary,gris
+3,biały,blanc
+3,pomarańczowy,orange
+4,Myślę. że...,Je pense que...
+4,Wszystko w porządku,Tout va bien
+4,"ciekawe, ...","""je me demande si""..."
+4,Cieszę się,"Je me rejouit, je suis content..."
+4,trochę,un petit peu
+4,Myśleć,Penser
+4,Uczyć,Enseigner
+4,Uczyć się,Apprendre
+4,Mówić,Parler
+4,Lubić,Aimer
+4,Kończyć,Finir
+4,Tańczyć,Danser
+4,Pracowity,Travailleur
+4,Leniwy,Paresseux
+4,Wesoła,Heureuse
+4,Smutna,Triste (f)
+4,Stary,Vieux
+4,Młody,Jeune (m)
+4,Ładna,Jolie
+4,Przystojny,Beau-gosse
+4,Brzydka,Moche (f)
+4,Zdrowa,En bonne sante
+4,Chora,Malade
+4,Czysta,Propre (f)
+4,Brudna,Sale (f)
+4,Wysportowany,Sportif
+4,Zmęczony,Fatigué
+4,Wysoki,Grand
+4,Niski,Petit
+4,Szczupły,Musclé
+4,Gruby,Gros
+4,średniego wzrostu,De taille moyenne
+4,Ciesyć się,Apprécier/se réjouir
+4,Jeździć,Aller (voiture)
+4,Siedzieć,Etre assis
+4,Palić,Fumer
+4,Chodzić,Aller (à pied)
+4,Robić,Faire
+4,Pewny,Sûr
+5,Jak masz na imię ?,Quel est ton prénom ?
+5,Kto to jest ?,Qui est-ce ?
+5,Gdzie mieszkasz ?,Ou habites-tu
+5,Jak się nazywasz ?,Comment t'appelles-tu ?
+5,Ile masz lat ?,Quel age as-tu ?
+5,Co lubisz robić,Qu'est-ce que tu aime faire ?
+5,Skąd jesteś,D'où es-tu ?
+5,Jaki/jaka jesteś,Comment es-tu ?
+5,Aktor / Aktorka,Acteur / actrice
+5,Policjant,Policier
+5,Fotograf,Photographe
+5,Nauczyciel,enseignant
+5,Inżynier,Ingénieur
+5,Muzyk,Musicien
+5,Emeryt,Retraité
+5,Rolnik,Paysan
+5,Kelner,Serveur
+5,Biznesmen,Homme d'affaire
+5,Urzędnik,Fonctionnaire
+5,Lekarz,Médecin
+5,Tancerz,Danseur
+5,Dziennikarz,Journaliste
+5,Kucharz,Cuisinier
+5,Informatyk,Informaticien
+5,Dentysta,Dentiste
+5,Czytać,lire
+5,Pisarz,ecrivain
+5,Sztuka,art
+5,śpiewać,chanter
+5,biegać,courir
+5,szybko,vite
+5,zdolny,"capable, doué"
+5,świetny,bon
+5,kierowca,conducteur
+5,czym,a quoi
+5,Piłką (nożną),football
+5,robić zdjęcia,faire des photos
+5,pół,moitié
+5,prawier,presque
+6,Umieć,Savoir
+6,Oglądać,Regarder
+6,Czytać,Lire
+6,Gotować,Cusiner
+6,Pisać,Ecrire
+6,Móc,Pouvoir
+6,Nudzić się,S'ennuyer
+6,Lubić,Apprécier
+6,Woleć,Préférer
+6,Szukać,Chercher
+6,Malować,Peindre
+6,Podróżować,Voyager
+6,Biegać,Courir
+6,Pływać,Plonger
+6,Śpiewać,Chanter
+6,Rysować,Dessiner
+6,Kupować,Acheter
+6,Spacerować,Se promener
+6,Pracować,Travailler
+6,Dyskutować,Discuter
+6,Gospodyni,Hôtesse
+6,Gospodarz,Hôte
+6,Samochód,Voiture
+6,Córka,Fille
+6,Koleżanka,Amie
+6,Szkoła,Ecole
+6,Kolega,Amie
+6,Siostra,Soeur
+6,Syn,Fils
+6,Książka,Livre
+6,Dom,Maison
+6,Krzesło,Chaise
+6,Komórka,Téléphone portable
+6,Długopis,Stylo
+6,Kawa,Café
+6,Brat,Frère
+6,Dziecko,Enfant
+6,Mieszkanie,Appartement
+6,Robię zdjęcia,Faire des photos
+6,Robić zakupi,Faire des achats
+6,Oglądam film,Regarder un film
+6,Oglądam telewizję,Regarder la télévision
+6,Oglądam mecz,Regarder un match
+6,Oglądam spektakl,Regarder un spéctacle
+6,Jeżdżę na rowerze,Je fais du vélo
+6,Jeżdżę na nartach,Je fais du ski
+6,Jeżdżę na snowboardzie,Je fais du snowboard
+6,Gram na gitarze,Je joue à la guitare
+6,Gram na pianinie,Je joue du piano
+6,Gram w tenisa,Je joue au tennis
+6,Gram w squasha,Je joue au squash
+6,Gram w piłkę (nożną),Je joue au foot
+6,Chodzę na zakupi,Je vais faire les courses
+6,Chodzę na mecz,Je vais au match
+6,Chodzę na spacery,Je vais faire un tour
+6,Chodzę do teatru,Je vais au théatre
+6,Chodzę do restauracji,Je vais au restaurant
+6,Chodzę na siłownię,Aller a la gym
+6,Grać w piłkę,Jouer au foot
+7,Krótki,court
+7,długi,long
+7,wolny,libre
+7,zajęty,occupe
+7,drogi,cher
+7,tani,bon marché
+7,bogaty,riche
+7,biedny,pauvre
+7,kosztować,couter
+7,płacić,payer
+7,polecać,recommander
+7,pieniądze,argent
+7,kantor,bureau de change
+7,bankomat,bancomat
+7,wolny,libre
+7,może,peut-etre
+7,dzisiaj,aujourdhui
+7,lista,list
+7,papierosy,cigarettes
+7,jeszcze,autre/plus
+7,coś,qqchose
+7,ulgowy,rabais
+7,za/zbyt,trop
+7,sto,100
+7,dwiście,200
+7,trzysta,300
+7,czterysta,400
+7,pięćset,500
+7,sześćset,600
+7,siedemset,700
+7,osiemset,800
+7,dziewięćset,900
+7,tysiąc,1000
+7,dokładnie,exactement!
+7,firmy,marque

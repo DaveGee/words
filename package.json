@@ -10,7 +10,7 @@
     "url": ""
   },
   "scripts": {
-    "start": "cd server && node index.js",
+    "start": "cd app && npm start",
     "postinstall": "cd server && npm install"
   },
   "devDependencies": {
