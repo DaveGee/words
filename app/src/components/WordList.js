@@ -1,25 +1,27 @@
 import './WordList.css'
-import React, { Component } from 'react'
+import React from 'react'
 import Types from 'prop-types'
+import { connect } from 'react-redux'
 
-class WordList extends Component {
-
-  static propTypes = {
-    words: Types.array
-  }
-
-  render() {
-    return (
-      <div className="WordList">
-        {this.props.words.map((w, i) => (
-          <div className="Word" key={i}>
-            <div className="Word__Lang1">{w.lang1}</div>
-            <div className="Word__Lang2">{w.lang2}</div>
-          </div>
-        ))}
+const WordList = ({
+  words
+}) => (
+  <div className="WordList">
+    {words.map((w, i) => (
+      <div className="Word" key={i}>
+        <div className="Word__Lang1">{w.lang1}</div>
+        <div className="Word__Lang2">{w.lang2}</div>
       </div>
-    )
-  }
+    ))}
+  </div>
+)
+
+WordList.propTypes = {
+  words: Types.array
 }
 
-export default WordList
+const mapStateToProps = state => ({
+  words: state.wordList
+})
+
+export default connect(mapStateToProps)(WordList)

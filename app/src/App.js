@@ -1,15 +1,24 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './App.css'
-import WordList from './containers/WordListContainer.js'
+import wordsApp from './reducers/words'
+import { createStore } from 'redux'
+import { Provider } from 'react-redux'
+import WordList from './components/WordList'
+import Menu from './components/Menu'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
+const store = createStore(wordsApp)
+
+const App = () => (
+  <Provider store={store}>
+    <div className="App">
+      <div className="App__Screen">
         <WordList />
       </div>
-    )
-  }
-}
+      <div className="App__Menu">
+        <Menu />
+      </div>
+    </div>
+  </Provider>
+)
 
 export default App
