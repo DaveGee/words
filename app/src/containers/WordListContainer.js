@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import WordList from '../components/WordList'
 import Types from 'prop-types'
-import words from '../../data/polski.json'
+import words from '../data/polski.json'
 
 const csvMapper = ([
   lesson,

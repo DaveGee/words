@@ -4,7 +4,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  border-top: 1px solid red;
+  border-top: 1px solid #f77e7e;
 }
 
 .Menu > a {
@@ -15,6 +15,12 @@
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-  color: red;
+  color: #f77e7e;
   font-weight: bold;
+  border-radius: 2px;
+}
+
+.Menu > a.Menu--current {
+  background: #f77e7e;
+  color: white;
 }

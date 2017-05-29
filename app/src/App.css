@@ -10,10 +10,17 @@
 .App__Screen {
   flex: 1;
   overflow: auto;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 .App__Menu {
-  flex: 0 0 50px;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background: white;
+  height: 50px;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.2);
   display: flex;
 }
 

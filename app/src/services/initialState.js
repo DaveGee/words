@@ -1,5 +1,5 @@
 
-import words from '../../data/polski.json'
+import words from '../data/polski.json'
 
 const csvMapper = ([
   lesson,

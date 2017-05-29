@@ -3,20 +3,16 @@ import React from 'react'
 import Types from 'prop-types'
 import { connect } from 'react-redux'
 import { navigateAction } from '../actions'
-
-const menus = [
-  'Play',
-  'List',
-]
+import routes from '../services/routes'
 
 const Menu = ({
   currentMenu,
   onNavigate
 }) => (
   <div className="Menu">
-    {menus.map((m, i) => (
-      <a onClick={() => onNavigate(m.toUpperCase())} key={m+i}>
-        <span>{m}</span>
+    {routes.map(({ label }, i) => (
+      <a onClick={() => onNavigate(label)} key={label+i} className={label === currentMenu ? 'Menu--current' : ''}>
+        <span>{label}</span>
       </a>
     ))}
   </div>
@@ -28,7 +24,7 @@ Menu.propTypes = {
 }
 
 const mapStateToProps = state => ({
-  currentMenu: state.menu,
+  currentMenu: state.screen,
 })
 
 const mapDispatchToProps = dispatch => ({

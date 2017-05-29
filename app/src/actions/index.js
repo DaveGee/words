@@ -1,5 +1,5 @@
 
-export const navigateAction = menu => ({
+export const navigateAction = navigateTo => ({
   type: 'NAVIGATE',
-  menu
+  navigateTo
 })
