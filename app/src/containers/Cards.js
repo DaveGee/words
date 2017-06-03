@@ -2,33 +2,33 @@ import React from 'react'
 import Types from 'prop-types'
 import { connect } from 'react-redux'
 import { getLessKnownWord } from '../utils/wordLib'
-
-/**
- * From the word list and the statistics :
- * - Display the next word (lang2)
- * - probability to show word is inverse of the number of time it was successfully guessed
- * -
- */
+import Card from '../components/Card'
+import { addSuccessAction, addFailureAction } from '../actions'
 
 
 const Cards = ({
   words,
   stats,
+  addSuccess,
+  addFailure,
 }) => {
   const word = getLessKnownWord(words, stats)
+  console.log('render', stats)
 
   return (
-    <div>
-      <div>{word.lesson}</div>
-      <div>{word.lang1}</div>
-      <div>{word.lang2}</div>
-    </div>
+    <Card
+      word={word}
+      onSuccess={addSuccess}
+      onFailure={addFailure}
+    />
   )
 }
 
 Cards.propTypes = {
   words: Types.array,
   stats: Types.object,
+  addSuccess: Types.func.isRequired,
+  addFailure: Types.func.isRequired,
 }
 
 const mapStateToProps = state => ({
@@ -36,4 +36,9 @@ const mapStateToProps = state => ({
   stats: state.stats.words,
 })
 
-export default connect(mapStateToProps)(Cards)
+const mapDispatchToProps = dispatch => ({
+  addSuccess: (word) => dispatch(addSuccessAction(word)),
+  addFailure: (word) => dispatch(addFailureAction(word)),
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(Cards)

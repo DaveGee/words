@@ -36,7 +36,7 @@ describe('getLessKnownWord', () => {
   it('Mostly returns the less viewed/failed word', () => {
     expect(getLessKnownWord(words, stats)).toEqual(_wordShape)
 
-    const count = getWordsLotsOfTimes(10)
+    const count = getWordsLotsOfTimes(50)
 
     expect(count['Hello world']).toBeDefined()
 

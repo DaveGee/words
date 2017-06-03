@@ -1,6 +1,6 @@
 
 import WordList from '../components/WordList'
-import Card from '../containers/Cards'
+import Card from '../components/Card'
 
 export const routes = [
   {
