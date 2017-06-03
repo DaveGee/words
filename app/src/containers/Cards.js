@@ -17,8 +17,6 @@ const Cards = ({
 }) => {
   const word = getLessKnownWord(words, stats)
 
-  return <div>Card</div>
-
   return (
     <div>
       <div>{word.lesson}</div>

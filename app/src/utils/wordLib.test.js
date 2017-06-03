@@ -17,9 +17,9 @@ const _wordShape = expect.objectContaining({
   lang2: expect.any(String),
 })
 
-const getWordsLotsOfTimes = length =>
+const getWordsLotsOfTimes = (length, givenStats) =>
   Array.from({ length }).reduce(acc => {
-    const x = getLessKnownWord(words, stats)
+    const x = getLessKnownWord(words, givenStats || stats)
     return {
       ...acc,
       [x.lang1]: acc[x.lang1] || 0  + 1
@@ -33,10 +33,10 @@ describe('getLessKnownWord', () => {
     expect(getLessKnownWord(words, 'test')).toEqual(_wordShape)
   })
 
-  it('Mostly returns the less known words', () => {
+  it('Mostly returns the less viewed/failed word', () => {
     expect(getLessKnownWord(words, stats)).toEqual(_wordShape)
 
-    const count = getWordsLotsOfTimes(100)
+    const count = getWordsLotsOfTimes(10)
 
     expect(count['Hello world']).toBeDefined()
 
@@ -46,12 +46,18 @@ describe('getLessKnownWord', () => {
   })
 
   it('Returns at least once all the words in the long run', () => {
-    const count = getWordsLotsOfTimes(1000)
+    const count = getWordsLotsOfTimes(10000)
 
     expect(Object.keys(count).length).toBe(4)
   })
 
   it('throws an error when theres no word to return', () => {
     expect(() => getLessKnownWord(null)).toThrow()
+  })
+
+  it('returns usually a different word when stats are the same', () => {
+    const count = getWordsLotsOfTimes(10000, {})
+
+    expect(Object.keys(count).length).toBe(4)
   })
 })
