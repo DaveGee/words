@@ -24,6 +24,8 @@ export const getLessKnownWord = (wordList, wordStats) => {
   if (!wordList || !wordList.length)
     throw new Error('No word in the list!')
 
+  wordList = wordList.sort(() => Math.random() - Math.random())
+
   const stat = getStat(wordStats)
 
   return wordList.reduce((w1, w2) => {

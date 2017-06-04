@@ -1,14 +1,15 @@
-
+import React from 'react'
 import WordList from '../components/WordList'
 import Card from '../components/Card'
+import { TiDocumentText, TiInputChecked } from 'react-icons/lib/ti'
 
 export const routes = [
   {
-    label: 'flashcards',
+    label: <TiInputChecked />,
     screen: Card,
   },
   {
-    label: 'words',
+    label: <TiDocumentText />,
     screen: WordList,
   }
 ]

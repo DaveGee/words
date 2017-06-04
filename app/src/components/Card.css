@@ -32,8 +32,10 @@
   transition: opacity 1s, transform 1s;
 }
 
-.Card__guess--word {
+.Card__guess--word,
+.Card__result--word {
   flex: 1 1 auto;
+  text-align: center;
 }
 
 .Card__menu {
