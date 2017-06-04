@@ -12,15 +12,16 @@
   overflow: auto;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
+  display: flex;
 }
 
 .App__Menu {
   position: fixed;
-  bottom: 0;
+  top: 0;
   width: 100vw;
   background: white;
   height: 50px;
-  box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.2);
+  /*box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.2);*/
   display: flex;
 }
 

@@ -1,8 +1,11 @@
+import './Card.css'
 import React from 'react'
 import { connect } from 'react-redux'
 import { withState } from 'recompose'
 import Types from 'prop-types'
 import { setSucceeded, setFailed } from '../actions'
+import { MdSync } from 'react-icons/lib/md'
+import { TiThumbsUp, TiThumbsDown } from 'react-icons/lib/ti'
 
 const GUESS = 'guess', RESULT = 'result'
 
@@ -27,23 +30,24 @@ const Card = ({
   }
 
   return (
-    <div className="Card">
-      {side === GUESS &&
-        <div className="Card__guess">
-          <div className="Card__guess--word">{word.lang1}</div>
-          <a className="Card__guess--show" onClick={() => switchSide(s => RESULT)}>Check</a>
-        </div>
-      }
-      {side === RESULT &&
-        <div className="Card__result">
-          <div className="Card__result--word1">{word.lang1}</div>
-          <div className="Card__result--word2">{word.lang2}</div>
-          <div className="Card__result--actions">
-            <a className="Card__result--correct" onClick={success}>:)</a>
-            <a className="Card__result--wrong" onClick={failed}>:(</a>
-          </div>
-        </div>
-      }
+    <div className={`Card Card__${side}`}>
+      <div className="Card__side Card__side--guess">
+        <div className="Card__guess--word">{word.lang1}</div>
+      </div>
+      <div className="Card__side Card__side--result">
+        <div className="Card__result--word1">{word.lang2}</div>
+      </div>
+      <div className="Card__menu">
+        <a className="Card__action Card--switch" onClick={() => switchSide(s => RESULT)}>
+          <MdSync />
+        </a>
+        <a className="Card__action Card--failed" onClick={failed}>
+          <TiThumbsDown />
+        </a>
+        <a className="Card__action Card--success" onClick={success}>
+          <TiThumbsUp />
+        </a>
+      </div>
     </div>
   )
 }

@@ -1,0 +1,61 @@
+.Card {
+  flex: 1;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.Card__guess .Card--success,
+.Card__guess .Card--failed,
+.Card__guess .Card__side--result {
+  display: none;
+}
+
+.Card__result .Card--switch {
+  display: none;
+}
+
+.Card__side {
+  font-size: 32px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 3px;
+  width: 100%;
+  background: white;
+  text-transform: capitalize;
+  transition: opacity 1s, transform 1s;
+}
+
+.Card__guess--word {
+  flex: 1 1 auto;
+}
+
+.Card__menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.Card__action {
+  flex: 0 0 auto;
+  font-weight: 700;
+  font-size: 70px;
+  padding: 30px;
+  opacity: 0.3;
+  color: #f77e7e;
+}
+
+.Card--success {
+  color: #3ba94a;
+}
