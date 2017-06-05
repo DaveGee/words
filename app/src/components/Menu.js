@@ -19,7 +19,10 @@ const Menu = ({
 )
 
 Menu.propTypes = {
-  currentMenu: Types.string.isRequired,
+  currentMenu: Types.oneOfType([
+    Types.string,
+    Types.element,
+  ]).isRequired,
   onNavigate: Types.func.isRequired,
 }
 

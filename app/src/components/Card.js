@@ -37,11 +37,11 @@ const Card = ({
         <div className="Card__result--word">{word.lang1}</div>
       </div>
       <div className="Card__menu">
-        <a className="Card__action Card--switch" onClick={() => switchSide(s => RESULT)}>
-          <TiArrowRepeat />
-        </a>
         <a className="Card__action Card--failed" onClick={failed}>
           <TiThumbsDown />
+        </a>
+        <a className="Card__action Card--switch" onClick={() => switchSide(s => RESULT)}>
+          <TiArrowRepeat />
         </a>
         <a className="Card__action Card--success" onClick={success}>
           <TiThumbsUp />
