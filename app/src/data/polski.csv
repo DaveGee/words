@@ -41,7 +41,7 @@ Lesson,Lang1,Lang2
 3,szary,gris
 3,biały,blanc
 3,pomarańczowy,orange
-4,Myślę. że...,Je pense que...
+4,"myślę, że...",Je pense que...
 4,Wszystko w porządku,Tout va bien
 4,"ciekawe, ...","""je me demande si""..."
 4,Cieszę się,"Je me rejouit, je suis content..."
@@ -114,10 +114,9 @@ Lesson,Lang1,Lang2
 5,zdolny,"capable, doué"
 5,świetny,bon
 5,kierowca,conducteur
-5,czym,a quoi
 5,Piłką (nożną),football
 5,robić zdjęcia,faire des photos
-5,pół,moitié
+5,pół (kilogram),demi (kilogramme)
 5,prawier,presque
 6,Umieć,Savoir
 6,Oglądać,Regarder
@@ -152,7 +151,6 @@ Lesson,Lang1,Lang2
 6,Dom,Maison
 6,Krzesło,Chaise
 6,Komórka,Téléphone portable
-6,Długopis,Stylo
 6,Kawa,Café
 6,Brat,Frère
 6,Dziecko,Enfant
@@ -178,15 +176,31 @@ Lesson,Lang1,Lang2
 6,Chodzę do restauracji,Je vais au restaurant
 6,Chodzę na siłownię,Aller a la gym
 6,Grać w piłkę,Jouer au foot
+6,zwykle,d'habitude
+6,często,souvent
+6,czasami,quelques fois
+6,od czasu do czasu,de temps en temps
+6,rzadko,rarement
+6,nigdy,jamais
+6,jak często,"""Combien souvent..."""
+6,raz w tygodniu (raz na tydzień),une fois par semaine
+6,dwa razy w tygodniu (dwa raz na tydzień),2x par semaine
+6,raz w miesięcu (raz na miesiąc),une fois par mois
+6,raz na rok,une fois par année
+6,codziennie,"chaque jour, journalier"
+6,najleprzy przyjaciel,meilleur ami
+6,starszy,plus vieux
+6,młodszy,plus jeune
+6,zależy,ça dépend
 7,Krótki,court
 7,długi,long
 7,wolny,libre
-7,zajęty,occupe
+7,zajęty,occupé
 7,drogi,cher
 7,tani,bon marché
 7,bogaty,riche
 7,biedny,pauvre
-7,kosztować,couter
+7,kosztować,coûter
 7,płacić,payer
 7,polecać,recommander
 7,pieniądze,argent
@@ -211,5 +225,53 @@ Lesson,Lang1,Lang2
 7,osiemset,800
 7,dziewięćset,900
 7,tysiąc,1000
-7,dokładnie,exactement!
+7,dokładnie,exactement
 7,firmy,marque
+8,posiłek,repas
+8,jasny chleb,pain blanc
+8,bułka,petit pain
+8,ciemny,pain foncé
+8,żółty ser,fromage jaune
+8,biały ser,fromage blanc
+8,jogurt,jogurt
+8,mleko,lait
+8,masło,beurre
+8,margaryna,margarine
+8,dżem,confiture
+8,miód,miel
+8,jajko,oeuf
+8,szynka,jambon
+8,kełbasa,saucisse
+8,płatki śnadaniowe,céréales
+8,sół,sel
+8,pieprz,poivre
+8,bardziej,plus (+)
+8,wędlina,charcuterie
+8,miękko,doux
+8,twardo,dur
+8,chętnie,volontiers
+8,mam ochotę na...,j'ai envie de...
+8,woleć,préférer
+8,tłusta (kiełbasa),grasse (saucisse)
+8,chuda (kiełbasa),"maigre, sec (saucisse)"
+8,jejecznica,oeufs brouillés
+8,gorąca,chaude
+8,zimny,froid
+8,"malina, malinowe",framboise
+8,"truskawka, truskawkowe",fraise
+8,śliwka,pruneau
+8,jabłko,pomme
+8,pomarańcza,orange
+8,mocny,fort (café)
+8,słaby,léger (café)
+8,kurczak,poulet
+8,surówka,légumes (salade)
+8,zupa z warzywami (zupa jarzynowa),soupe aux léguments
+8,ryż,riz
+8,ziemniaki,pommes-de-terre
+8,śmietana,crème
+8,rosoł,bouillon
+8,lekkiego,léger (repas)
+8,pieczone ziemniaki,patates au four
+8,gotowane jajko,oeufs vapeur
+8,ulubiony,préféré
