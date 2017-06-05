@@ -13,6 +13,7 @@
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   display: flex;
+  flex-direction: column;
 }
 
 .App__Menu {
